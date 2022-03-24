@@ -1,0 +1,27 @@
+$background: hsl(0, 0%, 98%);
+$backgroundElements: hsl(0, 0%, 100%);
+$boxShadow: 0px 0px 8px -5px #111;
+$text: hsl(200, 15%, 8%);
+$filterDropdown: invert(4%) sepia(6%) saturate(2543%) hue-rotate(155deg) brightness(91%) contrast(91%);
+
+//--General
+@import './components/_general.scss';
+
+//--Header
+@import '../../views/components/header/_header.scss';
+
+
+//--Section Filters
+@import './components/_sectionFilters.scss';
+
+//--Search
+@import '../../views/components/search/_search.scss';
+
+//--Filter Region
+@import '../../views/components/filterRegion/_filterRegion.scss';
+
+//--CardComponent
+@import '../../views/components/cardComponent/_cardComponent.scss';
+
+//--ButtonUp
+@import '../../views/components/buttonUp/_buttonUp.scss';

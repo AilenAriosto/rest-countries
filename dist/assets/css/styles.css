@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-family: "Nunito Sans", sans-serif;
+  color: #111517;
+  position: relative;
+}
+
+header {
+  background-color: white;
+  padding: 22px 80px;
+  box-shadow: 0px 6px 10px -10px #111;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+header .navbar-brand {
+  font-weight: 800;
+  margin: 0;
+  font-size: 24px;
+}
+header .navbar-brand--button {
+  font-weight: 600;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 8px;
+  color: #111517;
+}
+header .navbar-brand--button .iconify {
+  font-size: 20px;
+}
+
+@media (min-width: 200px) and (max-width: 960px) {
+  header {
+    padding: 22px 20px;
+  }
+  header .navbar-brand {
+    font-size: 14px;
+  }
+  header .navbar-brand--button {
+    font-size: 14px;
+  }
+  header .navbar-brand--button .iconify {
+    font-size: 14px;
+  }
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 46px 80px;
+}
+
+@media (min-width: 200px) and (max-width: 960px) {
+  .filters {
+    margin: 40px 18px;
+    flex-direction: column;
+    grid-gap: 30px;
+    align-items: flex-start;
+  }
+}
+.filterCountry {
+  display: flex;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 0px 8px -5px #111;
+  border-radius: 5px;
+  padding: 18px;
+  gap: 14px;
+  width: 480px;
+}
+.filterCountry .input {
+  width: 100%;
+  color: #111517;
+  background: white;
+}
+.filterCountry .input > input {
+  border: none;
+  width: 100%;
+  color: #111517;
+  background: white;
+}
+
+@media (min-width: 200px) and (max-width: 960px) {
+  .filterCountry {
+    width: 100%;
+  }
+}
+#filterRegion .dropdown-toggle {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: white;
+  box-shadow: 0px 0px 8px -5px #111;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #111517;
+}
+
+.dropdown-toggle::after {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  content: url("https://api.iconify.design/eva/arrow-ios-downward-fill.svg");
+  filter: invert(4%) sepia(6%) saturate(2543%) hue-rotate(155deg) brightness(91%) contrast(91%);
+}
+
+.dropdown-menu {
+  transform: translate3d(0px, 58px, 0px) !important;
+  width: 200px;
+  border: none;
+  box-shadow: 0px 0px 8px -5px #111;
+  background: white;
+}
+
+.dropdown-item {
+  padding: 0.25rem 1.5rem;
+  font-weight: 800;
+  font-size: 14px;
+  color: #111517;
+}
+
+#cardComponent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 72px;
+  margin: 0 80px;
+}
+
+.card {
+  width: 267px;
+  height: 336px;
+  border: none;
+  background: white;
+  box-shadow: 0px 0px 8px -5px #111;
+}
+.card .card-img-top {
+  height: 177px;
+  object-fit: cover;
+}
+.card h5 {
+  margin: 0;
+  padding: 0 0 10px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.card p {
+  font-weight: 600;
+  padding: 2px 0px;
+  margin: 0;
+  font-size: 14px;
+}
+.card p span {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media (min-width: 200px) and (max-width: 599px) {
+  #cardComponent {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  #cardComponent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1199px) {
+  #cardComponent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    width: 250px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #cardComponent {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .card {
+    width: 250px;
+  }
+}
+.buttonUpContainer {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  margin-right: 20px;
+  display: none;
+}
+.buttonUpContainer .buttonUp {
+  background-color: transparent;
+  color: #111517;
+  border: none;
+}
+.buttonUpContainer .buttonUp .iconify {
+  font-size: 40px;
+}

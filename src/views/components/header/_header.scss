@@ -1,0 +1,56 @@
+//--Header
+
+header{
+    background-color: $backgroundElements;
+    padding: 22px 80px;
+    box-shadow: 0px 6px 10px -10px #111;
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .navbar-brand{
+        font-weight: 800;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .navbar-brand--button{
+        font-weight: 600;
+        border: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 8px;
+        color: $text;
+
+        .iconify{
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media(min-width: 200px) and (max-width: 960px){
+  header{
+    padding: 22px 20px;
+
+    .navbar-brand{
+        font-size: 14px;
+    }
+
+    .navbar-brand--button{
+        font-size: 14px;
+
+        .iconify{
+            font-size: 14px;
+        }
+    }
+
+
+  }
+}

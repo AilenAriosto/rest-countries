@@ -1,0 +1,15 @@
+.filters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 46px 80px;
+}
+
+@media(min-width: 200px) and (max-width: 960px){
+  .filters {
+    margin: 40px 18px;
+    flex-direction: column;
+    grid-gap: 30px;
+    align-items: flex-start;
+  }
+}
