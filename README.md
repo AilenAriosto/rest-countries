@@ -1,9 +1,9 @@
-## Sunnyside Agency - Front End Mentor
+## Rest Countries - Front End Mentor
 
 ### Links
 
-- Solution URL: https://sunnyside-agency-jquery.netlify.app
-- Live Site URL: https://github.com/AilenAriosto/sunnyside-agency
+- Solution URL: https://github.com/AilenAriosto/rest-countries
+- Live Site URL:
 
 ### Built with
 
@@ -14,14 +14,13 @@
 - Responsive Design
 - Pug
 - Scss
-- Accesibilidad 
-- jQuery
+- javaScript
 - Git
 - Gulp
 
 ### What I learned
 
-- jQuery
+- javaScript
 
 
 ## Prerequisites 📋
@@ -35,7 +34,7 @@ Gulp (https://gulpjs.com/docs/en/getting-started/quick-start)
 
 
 ```
-$ git clone https://github.com/AilenAriosto/sunnyside-agency.git
+$ git clone https://github.com/AilenAriosto/rest-countries.git
 $ npm install
 ```
 
@@ -53,4 +52,3 @@ $ gulp
 - Frontend Mentor - @AilenAriosto (https://www.frontendmentor.io/profile/AilenAriosto)
 - Github - AilenAriosto (https://github.com/AilenAriosto)
 - Linkedin - Ailen Ariosto (https://www.linkedin.com/in/ailen-ariosto)
-
