@@ -21,6 +21,7 @@
 ### What I learned
 
 - javaScript
+- jQuery- Consumo de API con Ajax
 
 
 ## Prerequisites 📋
