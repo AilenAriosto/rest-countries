@@ -1,0 +1,140 @@
+.back{
+    width: 140px;
+    height: 43px;
+    background-color: $backgroundElements;
+    color: $text;
+    box-shadow: $boxShadow;
+    margin-left: 80px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: $text;
+    text-decoration: none;
+
+    .iconify{
+        color: $text;
+        margin-right: 10px;
+    }
+}
+
+.back:hover{
+    text-decoration: none;
+    color: $text;
+    box-shadow: 0px 11px 10px -1px #111;
+}
+
+.articleDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 80px 80px 0 80px;
+    gap: 100px;
+}
+
+.detailsContainerImage>img{
+    width:100%;
+}
+
+.articleDetails_containerDetailsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.articleDetails_containerDetailsText--title{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.articleDetails_containerDetailsText_feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .articleDetails_containerDetailsText_feature--title{
+        font-weight: 600;
+        padding: 2px 0px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .articleDetails_containerDetailsText_feature--span{
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+.containerBorderCountries{
+    display: flex;
+    align-items: center;
+
+    h6{
+        font-weight: 600;
+        padding: 2px 0px;
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
+.buttonBorderCountries{
+    width: 100px;
+    height: 27px;
+    background-color: $backgroundElements;
+    color: $text;
+    text-decoration: none;
+    box-shadow: $boxShadow;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+}
+
+.buttonBorderCountries:hover{
+    text-decoration: none;
+    color: $text;
+    box-shadow: 0px 11px 10px -1px #111;
+}
+
+
+@media( min-width:200px ) and ( max-width:960px ) {
+
+    .back{
+        margin-left: 0;
+    }
+
+    .articleDetails{
+        margin: 50px 10px 0;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .articleDetails_containerDetailsText--title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .articleDetails_containerDetailsText_feature{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .containerBorderCountries{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+
+        h6{
+            margin-bottom: 10px;
+        }
+
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+}

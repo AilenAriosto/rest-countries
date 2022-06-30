@@ -25,3 +25,6 @@ $filterDropdown: invert(4%) sepia(6%) saturate(2543%) hue-rotate(155deg) brightn
 
 //--ButtonUp
 @import '../../views/components/buttonUp/_buttonUp.scss';
+
+//--Details
+@import './components/_details.scss';

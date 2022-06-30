@@ -6,14 +6,14 @@
 html, body {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #fafafa;
+  background-color: hsl(0deg, 0%, 98%);
   font-family: "Nunito Sans", sans-serif;
-  color: #111517;
+  color: hsl(200deg, 15%, 8%);
   position: relative;
 }
 
 header {
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
   padding: 22px 80px;
   box-shadow: 0px 6px 10px -10px #111;
 }
@@ -36,7 +36,7 @@ header .navbar-brand--button {
   justify-content: center;
   align-items: center;
   grid-gap: 8px;
-  color: #111517;
+  color: hsl(200deg, 15%, 8%);
 }
 header .navbar-brand--button .iconify {
   font-size: 20px;
@@ -74,7 +74,7 @@ header .navbar-brand--button .iconify {
 .filterCountry {
   display: flex;
   align-items: center;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
   box-shadow: 0px 0px 8px -5px #111;
   border-radius: 5px;
   padding: 18px;
@@ -83,14 +83,14 @@ header .navbar-brand--button .iconify {
 }
 .filterCountry .input {
   width: 100%;
-  color: #111517;
-  background: white;
+  color: hsl(200deg, 15%, 8%);
+  background: hsl(0deg, 0%, 100%);
 }
 .filterCountry .input > input {
   border: none;
   width: 100%;
-  color: #111517;
-  background: white;
+  color: hsl(200deg, 15%, 8%);
+  background: hsl(0deg, 0%, 100%);
 }
 
 @media (min-width: 200px) and (max-width: 960px) {
@@ -102,14 +102,14 @@ header .navbar-brand--button .iconify {
   width: 200px;
   height: 50px;
   border: none;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
   box-shadow: 0px 0px 8px -5px #111;
   font-weight: 600;
   font-size: 14px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #111517;
+  color: hsl(200deg, 15%, 8%);
 }
 
 .dropdown-toggle::after {
@@ -126,14 +126,14 @@ header .navbar-brand--button .iconify {
   width: 200px;
   border: none;
   box-shadow: 0px 0px 8px -5px #111;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
 }
 
 .dropdown-item {
   padding: 0.25rem 1.5rem;
   font-weight: 800;
   font-size: 14px;
-  color: #111517;
+  color: hsl(200deg, 15%, 8%);
 }
 
 #cardComponent {
@@ -147,8 +147,10 @@ header .navbar-brand--button .iconify {
   width: 267px;
   height: 336px;
   border: none;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
   box-shadow: 0px 0px 8px -5px #111;
+  color: hsl(200deg, 15%, 8%);
+  text-decoration: none;
 }
 .card .card-img-top {
   height: 177px;
@@ -169,6 +171,12 @@ header .navbar-brand--button .iconify {
 .card p span {
   font-weight: 300;
   font-size: 14px;
+}
+
+.card:hover {
+  color: hsl(200deg, 15%, 8%);
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 @media (min-width: 200px) and (max-width: 599px) {
@@ -216,9 +224,141 @@ header .navbar-brand--button .iconify {
 }
 .buttonUpContainer .buttonUp {
   background-color: transparent;
-  color: #111517;
+  color: hsl(200deg, 15%, 8%);
   border: none;
 }
 .buttonUpContainer .buttonUp .iconify {
   font-size: 40px;
+}
+
+.back {
+  width: 140px;
+  height: 43px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(200deg, 15%, 8%);
+  box-shadow: 0px 0px 8px -5px #111;
+  margin-left: 80px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: hsl(200deg, 15%, 8%);
+  text-decoration: none;
+}
+.back .iconify {
+  color: hsl(200deg, 15%, 8%);
+  margin-right: 10px;
+}
+
+.back:hover {
+  text-decoration: none;
+  color: hsl(200deg, 15%, 8%);
+  box-shadow: 0px 11px 10px -1px #111;
+}
+
+.articleDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 80px 80px 0 80px;
+  gap: 100px;
+}
+
+.detailsContainerImage > img {
+  width: 100%;
+}
+
+.articleDetails_containerDetailsText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.articleDetails_containerDetailsText--title {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.articleDetails_containerDetailsText_feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.articleDetails_containerDetailsText_feature .articleDetails_containerDetailsText_feature--title {
+  font-weight: 600;
+  padding: 2px 0px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.articleDetails_containerDetailsText_feature .articleDetails_containerDetailsText_feature--span {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.containerBorderCountries {
+  display: flex;
+  align-items: center;
+}
+.containerBorderCountries h6 {
+  font-weight: 600;
+  padding: 2px 0px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.buttonBorderCountries {
+  width: 100px;
+  height: 27px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(200deg, 15%, 8%);
+  text-decoration: none;
+  box-shadow: 0px 0px 8px -5px #111;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+.buttonBorderCountries:hover {
+  text-decoration: none;
+  color: hsl(200deg, 15%, 8%);
+  box-shadow: 0px 11px 10px -1px #111;
+}
+
+@media (min-width: 200px) and (max-width: 960px) {
+  .back {
+    margin-left: 0;
+  }
+
+  .articleDetails {
+    margin: 50px 10px 0;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .articleDetails_containerDetailsText--title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .articleDetails_containerDetailsText_feature {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .containerBorderCountries {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .containerBorderCountries h6 {
+    margin-bottom: 10px;
+  }
+  .containerBorderCountries div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
