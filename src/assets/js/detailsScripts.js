@@ -5,7 +5,7 @@ const API = () => {
         const QUERY = new URLSearchParams(window.location.search)
         const PARAMS = QUERY.get('country')
         const FILTRODETALLE = response.filter(item => {
-            if(item.name.common.indexOf(PARAMS) !== -1){
+            if(item.cca3.indexOf(PARAMS) !== -1){
               return item
             }
         })
@@ -25,42 +25,43 @@ const API = () => {
   }
   
   const DETAILS = (element) => {
-    console.log(element)
-    let detailsContainer = `
-      <div class="detailsContainerImage"> <img src="${element[0].flags.svg}" alt="imagen de pais" /></div>
-      <div class="articleDetails_containerDetailsText" id="articleDetails">
-        <h4 class="articleDetails_containerDetailsText--title">${element[0].name.common}</h4>
-        <div class="articleDetails_containerDetailsText_feature">
-          <div>
-            <h6 class="articleDetails_containerDetailsText_feature--title">Native Name: <span class="articleDetails_containerDetailsText_feature--span">${element[0].name.official}</span></h6>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Population: <span class="articleDetails_containerDetailsText_feature--span">${element[0].population}</span></h6>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Region: <span class="articleDetails_containerDetailsText_feature--span">${element[0].region}</span></h6>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Sub Region: <span class="articleDetails_containerDetailsText_feature--span">${element[0].subregion}</span></h6>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Capital: <span class="articleDetails_containerDetailsText_feature--span">${element[0].capital}</span></h6>
-          </div>
-          <div>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Top Level Domain: <span class="articleDetails_containerDetailsText_feature--span">${element[0].tld}</span></h6>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Currencies: <span class="articleDetails_containerDetailsText_feature--span">${element[0].currencies}</span></h6>
-            <h6 class="articleDetails_containerDetailsText_feature--title"> Languages: <span class="articleDetails_containerDetailsText_feature--span">${element[0].languages}</span></h6>
-          </div>
-        </div>
-        <article class="containerBorderCountries">
-          <h6>Border Countries: </h6>
-          <div>
-            <button class="buttonBorderCountries">France </button>
-            <button class="buttonBorderCountries">Germany </button>
-            <button class="buttonBorderCountries">Netherlands</button>
-          </div>
-        </article>
-      </div>
-    `
-  
-    $("#articleDetails").append(detailsContainer)
+    $("#imageCountry").attr('src',element[0].flags.svg)
+    $("#titleCountry").text(element[0].name.common)
+    $("#nativeNameCountry").text(element[0].name.official)
+    $("#populationCountry").text(element[0].population)
+    $("#regionCountry").text(element[0].region)
+    $("#subregionCountry").text(element[0].subregion)
+    $("#capitalCountry").text(element[0].capital)
+    $("#toplevelCountry").text(element[0].tld)
+    
+    //Currencies
+    const CURRENCIES = Object.values(element[0].currencies)
+    $("#currenciesCountry").text(CURRENCIES[0].name + ' - ' + CURRENCIES[0].symbol )
+    
+    //Languages
+    const LANGUAGES = Object.values(element[0].languages)
+   
+    for( let i = 0; i< LANGUAGES.length; i++){
+      $("#languagesCountry").append(LANGUAGES[i] + ', ')
+    }
+
+    //Buttons Border Countries
+    const BORDERSCOUNTRIES = element[0].borders
+    
+    if(BORDERSCOUNTRIES){
+      for( let i = 0; i<BORDERSCOUNTRIES.length; i++ ){
+        $("#buttonsBorderCountriesContainer").append("<a href='details.html?country="+ BORDERSCOUNTRIES[i] + "' class='buttonBorderCountries'>" + BORDERSCOUNTRIES[i] + "</a>")
+      }
+    }else{
+      $(".containerBorderCountries").append("<span class='borderCountryUndefined'> Nothing </span>")
+    }
+
+
+
   
   }
   
   $(document).ready(function(){
-    console.log('ready')
     API();
     DARKMODE();
   })

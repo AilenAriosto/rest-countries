@@ -1,5 +1,3 @@
-## En construccion- Faltantes -  Loader para carga + botones en pagina detalles
-
 ## Rest Countries - Front End Mentor
 
 ### Links

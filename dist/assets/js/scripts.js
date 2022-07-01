@@ -4,6 +4,7 @@ const API = () => {
   const API_URL = "https://restcountries.com/v3.1/all";
 
   $.get(API_URL, function(response){
+    console.log(response)
     SEARCHCOUNTRY(response)
     SEARCHREGION(response)
     
@@ -18,7 +19,7 @@ const API = () => {
 const CARDS = (element) =>{
   
   let card = `
-    <a href="details.html?country=${element.name.common}" class="card cardAncla">
+    <a href="details.html?country=${element.cca3}" class="card cardAncla">
       <img class="card-img-top" src="${element.flags.svg}" alt="bandera" />
       <div class="card-body">
         <h5 class="card-title">${element.name.common}</h5>
@@ -69,7 +70,7 @@ const FILTERCOUNTRY = element =>{
   $("#cardComponent").empty()
   for(let i = 0; i<element.length; i++){
     let card = `
-      <a href="details.html?country=${element[i].name.common}" class="card cardAncla" >
+      <a href="details.html?country=${element[i].cca3}" class="card cardAncla" >
         <div class="card">
           <img class="card-img-top" src="${element[i].flags.svg}" alt="bandera" />
           <div class="card-body">

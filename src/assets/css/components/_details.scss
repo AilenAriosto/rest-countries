@@ -67,7 +67,7 @@
 
 .containerBorderCountries{
     display: flex;
-    align-items: center;
+    align-items: top;
 
     h6{
         font-weight: 600;
@@ -75,11 +75,16 @@
         margin: 0;
         font-size: 14px;
     }
+
+    div{
+        display: flex;
+        flex-flow: wrap;
+        gap: 10px;
+    }
 }
 
 .buttonBorderCountries{
-    width: 100px;
-    height: 27px;
+    padding: 10px;
     background-color: $backgroundElements;
     color: $text;
     text-decoration: none;
@@ -96,6 +101,12 @@
     text-decoration: none;
     color: $text;
     box-shadow: 0px 11px 10px -1px #111;
+}
+
+.borderCountryUndefined{
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 
@@ -132,8 +143,8 @@
         }
 
         div{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            flex-flow: wrap;
+            gap: 10px;
         }
     }
 

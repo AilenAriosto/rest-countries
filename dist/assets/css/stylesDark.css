@@ -297,7 +297,7 @@ header .navbar-brand--button .iconify {
 
 .containerBorderCountries {
   display: flex;
-  align-items: center;
+  align-items: top;
 }
 .containerBorderCountries h6 {
   font-weight: 600;
@@ -305,10 +305,14 @@ header .navbar-brand--button .iconify {
   margin: 0;
   font-size: 14px;
 }
+.containerBorderCountries div {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+}
 
 .buttonBorderCountries {
-  width: 100px;
-  height: 27px;
+  padding: 10px;
   background-color: hsl(209deg, 23%, 22%);
   color: hsl(0deg, 0%, 100%);
   text-decoration: none;
@@ -325,6 +329,12 @@ header .navbar-brand--button .iconify {
   text-decoration: none;
   color: hsl(0deg, 0%, 100%);
   box-shadow: 0px 11px 10px -1px #111;
+}
+
+.borderCountryUndefined {
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 @media (min-width: 200px) and (max-width: 960px) {
@@ -358,7 +368,7 @@ header .navbar-brand--button .iconify {
     margin-bottom: 10px;
   }
   .containerBorderCountries div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-flow: wrap;
+    gap: 10px;
   }
 }
