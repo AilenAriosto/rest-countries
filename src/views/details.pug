@@ -18,41 +18,45 @@ html(lang='en')
             a(href="index.html").back 
                 span.iconify(data-icon="bi:arrow-left")
                 | Back 
-            .articleDetails#articleDetails     
-                .detailsContainerImage
-                    img(src='' alt='imagen de pais')#imageCountry
-                #articleDetails.articleDetails_containerDetailsText
-                    h4.articleDetails_containerDetailsText--title#titleCountry
-                    .articleDetails_containerDetailsText_feature
-                        div
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Native Name: 
-                                span.articleDetails_containerDetailsText_feature--span#nativeNameCountry
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Population: 
-                                span.articleDetails_containerDetailsText_feature--span#populationCountry
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Region: 
-                                span.articleDetails_containerDetailsText_feature--span#regionCountry 
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Sub Region: 
-                                span.articleDetails_containerDetailsText_feature--span#subregionContry
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Capital: 
-                                span.articleDetails_containerDetailsText_feature--span#capitalCountry
-                        div
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Top Level Domain: 
-                                span.articleDetails_containerDetailsText_feature--span#toplevelCountry
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Currencies: 
-                                span.articleDetails_containerDetailsText_feature--span#currenciesCountry
-                            h6.articleDetails_containerDetailsText_feature--title
-                                | Languages: 
-                                span.articleDetails_containerDetailsText_feature--span#languagesCountry
-                    article.containerBorderCountries
-                        h6 Border Countries: 
-                        div#buttonsBorderCountriesContainer
+            .spinnerContainer
+                .spinner-grow.text-light(role='status')
+                    span.visually-hidden Loading...
+            .contentArticleDetails
+                .articleDetails     
+                    .detailsContainerImage
+                        img(src='' alt='imagen de pais')#imageCountry
+                    #articleDetails.articleDetails_containerDetailsText
+                        h4.articleDetails_containerDetailsText--title#titleCountry
+                        .articleDetails_containerDetailsText_feature
+                            div
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Native Name: 
+                                    span.articleDetails_containerDetailsText_feature--span#nativeNameCountry
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Population: 
+                                    span.articleDetails_containerDetailsText_feature--span#populationCountry
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Region: 
+                                    span.articleDetails_containerDetailsText_feature--span#regionCountry 
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Sub Region: 
+                                    span.articleDetails_containerDetailsText_feature--span#subregionContry
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Capital: 
+                                    span.articleDetails_containerDetailsText_feature--span#capitalCountry
+                            div
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Top Level Domain: 
+                                    span.articleDetails_containerDetailsText_feature--span#toplevelCountry
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Currencies: 
+                                    span.articleDetails_containerDetailsText_feature--span#currenciesCountry
+                                h6.articleDetails_containerDetailsText_feature--title
+                                    | Languages: 
+                                    span.articleDetails_containerDetailsText_feature--span#languagesCountry
+                        article.containerBorderCountries
+                            h6 Border Countries: 
+                            div#buttonsBorderCountriesContainer
                                  
                     
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')

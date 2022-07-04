@@ -4,14 +4,12 @@ const API = () => {
   const API_URL = "https://restcountries.com/v3.1/all";
 
   $.get(API_URL, function(response){
-    console.log(response)
     SEARCHCOUNTRY(response)
     SEARCHREGION(response)
     
     response.forEach((item, i) => {
       CARDS(item)
     });
-
   })
 
 }
@@ -29,11 +27,10 @@ const CARDS = (element) =>{
       </div>
     </a>
   `
-
   $("#cardComponent").append(card)
   $(".buttonUpContainer").show()
-
 }
+
 
 const DARKMODE = () =>{
   let theme = $("#theme")
@@ -125,10 +122,11 @@ const SEARCHREGION = (element) => {
 
 }
 
+API()
 
-$(document).ready(function(){
-  API();
+$(window).on('load', function(){
+  $(".spinnerContainer").fadeOut(2000)
+  $("#cardComponentContainer").fadeIn(1000)
   DARKMODE();
-  UP();  
+  UP(); 
 })
-

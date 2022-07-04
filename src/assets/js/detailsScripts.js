@@ -61,9 +61,11 @@ const API = () => {
   
   }
   
-  $(document).ready(function(){
-    API();
+  API()
+
+  $(window).on('load', function(){
+    $(".spinnerContainer").fadeOut(2000)
+    $(".contentArticleDetails").fadeIn(1000)
     DARKMODE();
   })
-  
   

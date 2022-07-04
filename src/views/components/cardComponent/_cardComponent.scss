@@ -1,3 +1,22 @@
+.spinnerContainer{
+  background-color: $background;
+  height: 100%;
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.spinner-grow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.cardComponentContainer{
+  display: none;
+}
+
 #cardComponent{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -21,28 +21,33 @@
       </nav>
     </header>
     <main><a class="back" href="index.html"> <span class="iconify" data-icon="bi:arrow-left"></span>Back </a>
-      <div class="articleDetails" id="articleDetails">    
-        <div class="detailsContainerImage"><img src="" alt="imagen de pais" id="imageCountry"></div>
-        <div class="articleDetails_containerDetailsText" id="articleDetails">
-          <h4 class="articleDetails_containerDetailsText--title" id="titleCountry"></h4>
-          <div class="articleDetails_containerDetailsText_feature">
-            <div>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Native Name: <span class="articleDetails_containerDetailsText_feature--span" id="nativeNameCountry"></span></h6>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Population: <span class="articleDetails_containerDetailsText_feature--span" id="populationCountry"></span></h6>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Region: <span class="articleDetails_containerDetailsText_feature--span" id="regionCountry"> </span></h6>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Sub Region: <span class="articleDetails_containerDetailsText_feature--span" id="subregionContry"></span></h6>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Capital: <span class="articleDetails_containerDetailsText_feature--span" id="capitalCountry"></span></h6>
+      <div class="spinnerContainer">
+        <div class="spinner-grow text-light" role="status"><span class="visually-hidden">Loading...</span></div>
+      </div>
+      <div class="contentArticleDetails">
+        <div class="articleDetails">    
+          <div class="detailsContainerImage"><img src="" alt="imagen de pais" id="imageCountry"></div>
+          <div class="articleDetails_containerDetailsText" id="articleDetails">
+            <h4 class="articleDetails_containerDetailsText--title" id="titleCountry"></h4>
+            <div class="articleDetails_containerDetailsText_feature">
+              <div>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Native Name: <span class="articleDetails_containerDetailsText_feature--span" id="nativeNameCountry"></span></h6>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Population: <span class="articleDetails_containerDetailsText_feature--span" id="populationCountry"></span></h6>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Region: <span class="articleDetails_containerDetailsText_feature--span" id="regionCountry"> </span></h6>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Sub Region: <span class="articleDetails_containerDetailsText_feature--span" id="subregionContry"></span></h6>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Capital: <span class="articleDetails_containerDetailsText_feature--span" id="capitalCountry"></span></h6>
+              </div>
+              <div>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Top Level Domain: <span class="articleDetails_containerDetailsText_feature--span" id="toplevelCountry"></span></h6>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Currencies: <span class="articleDetails_containerDetailsText_feature--span" id="currenciesCountry"></span></h6>
+                <h6 class="articleDetails_containerDetailsText_feature--title">Languages: <span class="articleDetails_containerDetailsText_feature--span" id="languagesCountry"></span></h6>
+              </div>
             </div>
-            <div>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Top Level Domain: <span class="articleDetails_containerDetailsText_feature--span" id="toplevelCountry"></span></h6>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Currencies: <span class="articleDetails_containerDetailsText_feature--span" id="currenciesCountry"></span></h6>
-              <h6 class="articleDetails_containerDetailsText_feature--title">Languages: <span class="articleDetails_containerDetailsText_feature--span" id="languagesCountry"></span></h6>
-            </div>
+            <article class="containerBorderCountries">
+              <h6>Border Countries: </h6>
+              <div id="buttonsBorderCountriesContainer"></div>
+            </article>
           </div>
-          <article class="containerBorderCountries">
-            <h6>Border Countries: </h6>
-            <div id="buttonsBorderCountriesContainer"></div>
-          </article>
         </div>
       </div>
     </main>
