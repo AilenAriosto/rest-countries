@@ -64,7 +64,7 @@ const API = () => {
   API()
 
   $(window).on('load', function(){
-    $(".spinnerContainer").fadeOut(2000)
+    $(".spinnerContainer").fadeOut(1000)
     $(".contentArticleDetails").fadeIn(1000)
     DARKMODE();
   })
