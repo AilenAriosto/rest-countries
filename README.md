@@ -9,12 +9,12 @@
 
 - HTML5 Semántico
 - CSS3
-- Flexbox
-- CSS Grid
+- Bootstrap
 - Responsive Design
 - Pug
 - Scss
 - javaScript
+- jQuery
 - Git
 - Gulp
 
